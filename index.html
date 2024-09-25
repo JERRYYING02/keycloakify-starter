@@ -3,10 +3,21 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <style>
+            html, body, #root {
+                margin: 0; /* Remove default margin */
+                padding: 0; /* Remove default padding */
+                height: 100%; /* Full height for html, body, and #root */
+                width: 100%; /* Full width for html, body, and #root */
+            }
+            body {
+                background: url('./assets/background.png') no-repeat center center fixed;
+                background-size: cover; /* Ensure the background covers the entire area */
+                
+            }
+        </style>
     </head>
-
     <body>
         <div id="root"></div>
         <script type="module" src="/src/main.tsx"></script>
